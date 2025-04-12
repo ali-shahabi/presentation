@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تاثیر هوش تجاری بر کیفیت تصمیم گیری کارآفرینان</title>
+    <!-- Reveal.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/night.css"
+      id="theme"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+      * {
+        text-align: right !important;
+        font-family: "Vazirmatn", serif !important;
+      }
+      body {
+        background: #1a1a1a; /* Dark gray background */
+        color: #e0e0e0; /* Light gray text */
+      }
+      h1 {
+        font-size: 60px !important;
+        color: rgb(72, 150, 240) !important; /* Blue accent for titles */
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 50px !important;
+        color: rgb(72, 150, 240) !important; /* Blue accent for titles */
+        margin-bottom: 20px;
+      }
+      
+      /* Keep p tag styling only for those after h2 */
+      h2 + p {
+        font-size: 30px !important;
+        margin-bottom: 10px;
+      }
+      
+      /* New list styling */
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        line-height: 1.6;
+      }
+      
+      li {
+        font-size: 20px !important;
+        list-style: none;
+        padding-right: 20px;
+        margin-bottom: 10px;
+        position: relative;
+      }
+      
+      li::before {
+        content: "•";
+        color: rgb(72, 150, 240);
+        position: absolute;
+        right: 0;
+        margin-right: 5px;
+      }
+      
+      .fragment {
+        font-size: medium;
+      }
+
+      /* Introduction Slide Styling */
+      .intro-slide h1 {
+        font-size: 80px;
+        color: #4a90e2;
+        text-align: right !important;
+        font-weight: bold;
+      }
+      .intro-slide h3 {
+        font-size: 30px;
+        color: #e0e0e0;
+        text-align: right !important;
+        margin: 20px 0;
+        font-weight: bold;
+      }
+      .intro-slide ul {
+        list-style-type: disc;
+        padding-left: 40px;
+        font-size: 20px;
+        text-align: right !important;
+        margin: 0;
+      }
+      .intro-slide li {
+        margin: 10px 0;
+      }
+      /* Geometric Background */
+      .geometric-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+      }
+      .geometric-bg::before,
+      .geometric-bg::after {
+        content: "";
+        position: absolute;
+        opacity: 0.1; /* Very light opacity */
+      }
+      .geometric-bg::before {
+        width: 0;
+        height: 0;
+        border-left: 300px solid transparent;
+        border-right: 300px solid transparent;
+        border-bottom: 400px solid #e0e0e0;
+        top: -100px;
+        left: -150px;
+        animation: shiftTriangle 10s infinite ease-in-out;
+      }
+      .geometric-bg::after {
+        width: 100%;
+        height: 2px;
+        background: #e0e0e0;
+        top: 80%;
+        left: 0;
+        animation: shiftLine 8s infinite ease-in-out;
+      }
+      @keyframes shiftTriangle {
+        0%,
+        100% {
+          transform: translateX(0) rotate(0deg);
+        }
+        50% {
+          transform: translateX(50px) rotate(20deg);
+        }
+      }
+      @keyframes shiftLine {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-30px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Geometric Background -->
+    <div class="geometric-bg"></div>
+
+    <div class="reveal">
+      <div class="slides">
+        <!-- Introduction Slide -->
+        <section class="intro-slide">
+          <h1>تاثیر هوش تجاری بر کیفیت تصمیم گیری کارآفرینان</h1>
+          <h3>با تمرکز بر نقش میانجی کیفیت اطلاعات، کیفیت داده و نوآوری</h3>
+          <ul>
+            <li>نویسنده: مجید فانی</li>
+            <li>استادیار گروه مدیریت بازرگانی، واحد بابل، دانشگاه آزاد اسلامی</li>
+            <li>پژوهشنامه مدیریت اجرایی، دوره ۱۴، شماره ۲۸</li>
+            <li>پاییز و زمستان ۱۴۰۰، صفحات ۲۲۹-۲۵۳</li>
+          </ul>
+        </section>
+
+        <!-- Slide 2: چکیده -->
+        <section>
+          <h2>چکیده</h2>
+          <p class="fragment">نیاز اصلی: کارآفرینان برای تصمیم‌گیری درست به اطلاعات دقیق نیاز دارند.</p>
+          <ul>
+            <li class="fragment">نقش هوش تجاری (BI): پشتیبانی از تصمیم‌گیری، افزایش کارایی و اثربخشی، کمک به توسعه پایدار.</li>
+            <li class="fragment">هدف: بررسی تاثیر BI بر کیفیت تصمیم‌گیری کارآفرینان.</li>
+            <li class="fragment">نمونه: ۲۸۵ پرسشنامه از کارآفرینان فعال اتاق بازرگانی استان مازندران.</li>
+            <li class="fragment">یافته‌های کلیدی: تاثیر مثبت و معنادار BI، کیفیت اطلاعات، کیفیت داده و نوآوری بر کیفیت تصمیم‌گیری.</li>
+          </ul>
+        </section>
+
+        <!-- Slide 3: مقدمه و بیان مسئله -->
+        <section>
+          <h2>مقدمه و بیان مسئله</h2>
+          <p class="fragment">محیط کسب‌وکار به سرعت در حال تغییر و پیچیده شدن است.</p>
+          <ul>
+            <li class="fragment">چالش: مدیریت حجم عظیم داده‌های ساختاریافته و بدون ساختار.</li>
+            <li class="fragment">هدف BI: افزایش آگاهی سازمانی، بهبود فرایند تصمیم‌گیری کارآفرینان.</li>
+            <li class="fragment">چالش کارآفرینان: اغلب با کمبود/نامربوط بودن اطلاعات مواجه‌اند.</li>
+          </ul>
+        </section>
+
+        <!-- Slide 4: مرور ادبیات -->
+        <section>
+          <h2>مرور ادبیات: هوش تجاری و کیفیت تصمیم‌گیری</h2>
+          <p class="fragment">BI به عنوان مجموعه‌ای از مفاهیم و روش‌ها برای بهبود تصمیم‌گیری تجاری.</p>
+          <ul>
+            <li class="fragment">BI محیطی برای تفکر راهبردی و تصمیم‌گیری مؤثر فراهم می‌کند.</li>
+            <li class="fragment">سیستم‌های BI الگوهایی برای تصمیم‌گیری ارائه می‌دهند.</li>
+            <li class="fragment">کارآفرینان در پردازش اطلاعات خلاق‌تر و هیجان‌طلب‌تر هستند.</li>
+          </ul>
+        </section>
+
+        <!-- Slide 5: متغیرهای میانجی -->
+        <section>
+          <h2>هوش تجاری و متغیرهای میانجی</h2>
+          <p class="fragment">BI و نوآوری: تاثیر مثبت در مطالعات مختلف نشان داده شده است.</p>
+          <ul>
+            <li class="fragment">BI و کیفیت اطلاعات: اطلاعات هسته مرکزی BI است.</li>
+            <li class="fragment">BI و کیفیت داده: کیفیت داده پایدار برای موفقیت BI حیاتی است.</li>
+          </ul>
+        </section>
+
+        <!-- Slide 6: متغیرهای میانجی و کیفیت تصمیم‌گیری -->
+        <section>
+          <h2>متغیرهای میانجی و کیفیت تصمیم‌گیری</h2>
+          <p class="fragment">کیفیت داده و اطلاعات: تاثیر معنادار بر یکدیگر.</p>
+          <ul>
+            <li class="fragment">کیفیت داده و تصمیم‌گیری: داده‌های با کیفیت منجر به تصمیمات بهتر.</li>
+            <li class="fragment">کیفیت اطلاعات و تصمیم‌گیری: اطلاعات ضعیف به تصمیمات حیاتی آسیب می‌زند.</li>
+            <li class="fragment">نوآوری و تصمیم‌گیری: ایده‌های نوآورانه منجر به تصمیمات مؤثرتر.</li>
+          </ul>
+        </section>
+
+        <!-- Slide 7: مدل مفهومی -->
+        <section>
+          <h2>مدل مفهومی</h2>
+          <p class="fragment">متغیر مستقل: هوش تجاری (BI)</p>
+          <ul>
+            <li class="fragment">متغیر وابسته: کیفیت تصمیم گیری کارآفرینان</li>
+            <li class="fragment">متغیرهای میانجی: کیفیت داده، کیفیت اطلاعات، نوآوری</li>
+            <li class="fragment">روابط فرضی: اثرات مستقیم و غیرمستقیم مثبت</li>
+          </ul>
+        </section>
+
+        <!-- Slide 8: روش‌شناسی -->
+        <section>
+          <h2>روش‌شناسی</h2>
+          <p class="fragment">نوع: کاربردی، توصیفی-پیمایشی</p>
+          <ul>
+            <li class="fragment">ابزار: پرسشنامه استاندارد (۲۵ سوال نهایی)</li>
+            <li class="fragment">جامعه: ۱۱۰۰ کارآفرین فعال، اتاق بازرگانی مازندران</li>
+            <li class="fragment">نمونه: ۲۸۵ نفر (جدول مورگان)</li>
+            <li class="fragment">تحلیل: SEM با نرم‌افزار Mplus</li>
+          </ul>
+        </section>
+
+        <!-- Slide 9: یافته‌ها -->
+        <section>
+          <h2>یافته‌ها</h2>
+          <p class="fragment">برازش مدل: تایید برازش خوب مدل با داده‌ها</p>
+          <ul>
+            <li class="fragment">اثرات مستقیم: تمام مسیرهای مستقیم مثبت معنادار</li>
+            <li class="fragment">اثرات میانجی: میانجی‌گری جزئی و معنادار متغیرها</li>
+            <li class="fragment">نتیجه: تایید تمام فرضیه‌های پژوهش</li>
+          </ul>
+        </section>
+
+        <!-- Slide 10: نتیجه‌گیری و پیشنهادات -->
+        <section>
+          <h2>نتیجه‌گیری و پیشنهادات</h2>
+          <p class="fragment">نتیجه‌گیری اصلی: BI عامل کلیدی برای بهبود کیفیت تصمیم‌گیری</p>
+          <ul>
+            <li class="fragment">پیشنهادات کاربردی: سرمایه‌گذاری در BI، آموزش، فرهنگ داده‌محور</li>
+            <li class="fragment">پیشنهادات پژوهشی: بررسی عوامل دیگر، تکرار در صنایع مختلف</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- Reveal.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        transition: "slide", // Slide transition between pages
+        transitionSpeed: "default",
+        controls: true, // Show Reveal.js navigation arrows
+        progress: true,
+        center: true,
+        slideNumber: false,
+        width: 1000,
+        height: 700,
+        fragments: false, // Enable fragment reveal
+        rtl:true, // Enable RTL support
+      });
+    </script>
+  </body>
+</html>
